@@ -1,0 +1,27 @@
+version: '3.0'
+
+services:
+   db:
+     image: mysql:8.0.26
+     environment:
+       MYSQL_RANDOM_ROOT_PASSWORD: 1
+       MYSQL_DATABASE: shape
+       MYSQL_USER: geomshape_user
+       MYSQL_PASSWORD: very_strong_password
+     volumes:
+       - dbdata:/var/lib/mysql
+       - ./_MySQL_Init_Script:/docker-entrypoint-initdb.d
+     restart: always
+     ports:
+       - "3306:3306"
+
+   geomshape:
+     depends_on:
+       - db
+     build:
+       context: .
+     ports:
+       - "8080:5000"
+
+volumes:
+    dbdata:

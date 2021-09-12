@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeomShapeServer", "GeomShapeServer\GeomShapeServer.csproj", "{561ADF95-CD46-48F9-8B6E-1E60538EC80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{B467DBA9-2143-4CB4-A25A-12771B4802C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{68B29549-9EC3-4983-971B-32F4874B3E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{347D1C0B-D504-4B5C-A402-2B7D43B1B788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{66672558-0768-4D30-B443-9579202EF28D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{561ADF95-CD46-48F9-8B6E-1E60538EC80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561ADF95-CD46-48F9-8B6E-1E60538EC80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561ADF95-CD46-48F9-8B6E-1E60538EC80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561ADF95-CD46-48F9-8B6E-1E60538EC80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B467DBA9-2143-4CB4-A25A-12771B4802C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B467DBA9-2143-4CB4-A25A-12771B4802C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B467DBA9-2143-4CB4-A25A-12771B4802C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B467DBA9-2143-4CB4-A25A-12771B4802C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B29549-9EC3-4983-971B-32F4874B3E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B29549-9EC3-4983-971B-32F4874B3E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B29549-9EC3-4983-971B-32F4874B3E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B29549-9EC3-4983-971B-32F4874B3E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347D1C0B-D504-4B5C-A402-2B7D43B1B788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347D1C0B-D504-4B5C-A402-2B7D43B1B788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347D1C0B-D504-4B5C-A402-2B7D43B1B788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347D1C0B-D504-4B5C-A402-2B7D43B1B788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66672558-0768-4D30-B443-9579202EF28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66672558-0768-4D30-B443-9579202EF28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66672558-0768-4D30-B443-9579202EF28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66672558-0768-4D30-B443-9579202EF28D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
