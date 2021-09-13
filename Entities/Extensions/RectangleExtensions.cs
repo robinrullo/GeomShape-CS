@@ -7,11 +7,10 @@ namespace Entities.Extensions
         
         public static void Map(this Rectangle dbRectangle, Rectangle rectangle)
         {
-            dbRectangle.shapeId = rectangle.shapeId;
-            dbRectangle.offsetX = rectangle.offsetX;
-            dbRectangle.offsetY = rectangle.offsetY;
-            dbRectangle.lengthA = rectangle.lengthA;
-            dbRectangle.lengthB = rectangle.lengthB;
+            dbRectangle.OffsetX = rectangle.OffsetX;
+            dbRectangle.OffsetY = rectangle.OffsetY;
+            dbRectangle.LengthA = rectangle.LengthA;
+            dbRectangle.LengthB = rectangle.LengthB;
         }
     }
 }

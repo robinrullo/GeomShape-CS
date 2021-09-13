@@ -7,10 +7,9 @@ namespace Entities.Extensions
         
         public static void Map(this Circle dbCircle, Circle circle)
         {
-            dbCircle.shapeId = circle.shapeId;
-            dbCircle.offsetX = circle.offsetX;
-            dbCircle.offsetY = circle.offsetY;
-            dbCircle.radius = circle.radius;
+            dbCircle.OffsetX = circle.OffsetX;
+            dbCircle.OffsetY = circle.OffsetY;
+            dbCircle.Radius = circle.Radius;
         }
     }
 }

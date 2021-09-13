@@ -1,4 +1,3 @@
-using System;
 using Contracts;
 using Entities;
 using LoggerService;
@@ -29,7 +28,6 @@ namespace GeomShapeServer.Extensions
         {
             services.Configure<IISOptions>(options => 
             {
-                
             });
         }
 

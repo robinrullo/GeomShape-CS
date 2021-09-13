@@ -6,10 +6,25 @@ namespace Repository
     public class RepositoryWrapper : IRepositoryWrapper
     {
         private RepositoryContext _repoContext;
+        private IDrawingRepository _drawing;
         private ICircleRepository _circle;
         private IRectangleRepository _rectangle;
         private ITriangleRepository _triangle;
 
+        
+        public IDrawingRepository Drawing
+        {
+            get
+            {
+                if (_drawing == null)
+                {
+                    _drawing = new DrawingRepository(_repoContext);
+                }
+
+                return _drawing;
+            }
+        }
+        
         public ICircleRepository Circle
         {
             get

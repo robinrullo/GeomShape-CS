@@ -11,15 +11,18 @@ namespace Entities
         {
         }
         
+        public DbSet<Drawing> Drawings { get; set; }
         public DbSet<Circle> Circles { get; set; }
         public DbSet<Rectangle> Rectangles { get; set; }
         public DbSet<Triangle> Triangles { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Circle>().ToTable("circle");
-            modelBuilder.Entity<Rectangle>().ToTable("rectangle");
-            modelBuilder.Entity<Triangle>().ToTable("triangle");
+            modelBuilder.HasDefaultSchema("GeomShape");
+            modelBuilder.Entity<Drawing>().ToTable("Drawing");
+            modelBuilder.Entity<Circle>().ToTable("Circle");
+            modelBuilder.Entity<Rectangle>().ToTable("Rectangle");
+            modelBuilder.Entity<Triangle>().ToTable("Triangle");
         }
     }
 }
