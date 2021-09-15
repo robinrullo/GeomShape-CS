@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Repository;
 
 
@@ -40,7 +41,15 @@ namespace GeomShapeServer.Extensions
         {
             var connectionString = config["mysqlconnection:connectionString"];
             var serverVersion = new MySqlServerVersion(config["mysqlconnection:serverVersion"]);
-            services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString, serverVersion)
+            services.AddDbContext<RepositoryContext>(
+                o => o.UseMySql(
+                    connectionString,
+                    serverVersion, 
+                    b => b.SchemaBehavior(
+                        MySqlSchemaBehavior.Translate, 
+                        (schema, entity) => $"{schema ?? "dbo"}_{entity}"
+                    )
+                )
                 .EnableSensitiveDataLogging() // <-- These two calls are optional but help
                 .EnableDetailedErrors());
         }
